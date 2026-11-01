@@ -135,3 +135,9 @@ def populate_dgraph():
     # Paso 7: Enviar todos los nodos y relaciones a Dgraph en una sola
     #         transacción y confirmarla para que se guarden
     pass
+
+if __name__ == "__main__":
+    print("Iniciando scripts de población...")
+    populate_mongodb()
+    # populate_cassandra()
+    # populate_dgraph()
