@@ -22,8 +22,8 @@ CONSULTAS = [
     "Usuarios con gustos similares",
     "Playlists de mi red con un artista",
     "Red de colaboraciones de un artista",
-    "Géneros populares en mi red",
-    "Amigos mutuos que siguen a un artista"
+    "Amigos mutuos que siguen a un artista",
+    "Conciertos dentro de cierta zona"
 ]
 
 
