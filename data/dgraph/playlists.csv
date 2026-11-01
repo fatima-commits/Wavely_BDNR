@@ -1,7 +1,7 @@
-playlist_id,playlist_name,is_public
-1,Pop para estudiar,true
-2,Mis favoritas,false
-3,Perreo,true
-4,Viaje en carretera,true
-5,Taylor Era,true
-6,Corridos,true
+playlist_id,playlist_name,is_public,created_at
+1,Pop para estudiar,true,2025-02-10
+2,Mis favoritas,false,2025-03-01
+3,Perreo,true,2025-04-12
+4,Viaje en carretera,true,2025-05-20
+5,Taylor Era,true,2025-06-02
+6,Corridos,true,2025-07-15

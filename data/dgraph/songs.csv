@@ -1,25 +1,26 @@
-song_id,song_title,duration
-1,Tití Me Preguntó,243
-2,Me Porto Bonito,178
-3,Un x100to,194
-4,La Noche de Anoche,203
-5,Un Día,230
-6,Provenza,210
-7,TQG,198
-8,Sigue,191
-9,Lady Gaga,213
-10,PRC,184
-11,AMG,196
-12,Tulum,203
-13,Anti-Hero,200
-14,Cruel Summer,178
-15,End Game,244
-16,Levitating,203
-17,Shape of You,233
-18,Yellow,266
-19,Viva la Vida,242
-20,Fireworks,221
-21,Feliz Cumpleaños Ferxxo,165
-22,Hips Don't Lie,218
-23,Malamente,150
-24,Mi Gente,189
+song_id,song_title,duration,release_date
+1,Tití Me Preguntó,243,2022-05-06
+2,Me Porto Bonito,178,2022-05-06
+3,Un x100to,194,2023-04-17
+4,La Noche de Anoche,203,2020-11-27
+5,Un Día,230,2020-07-23
+6,Provenza,210,2022-04-21
+7,TQG,198,2023-02-24
+8,Sigue,191,2023-06-29
+9,Lady Gaga,213,2023-06-22
+10,PRC,184,2023-01-23
+11,AMG,196,2022-11-24
+12,Tulum,203,2023-08-11
+13,Anti-Hero,200,2022-10-21
+14,Cruel Summer,178,2019-08-23
+15,End Game,244,2017-11-10
+16,Levitating,203,2020-03-27
+17,Shape of You,233,2017-01-06
+18,Yellow,266,2000-06-26
+19,Viva la Vida,242,2008-05-25
+20,Fireworks,221,2024-03-15
+21,Feliz Cumpleaños Ferxxo,165,2022-08-25
+22,Hips Don't Lie,218,2006-02-28
+23,Malamente,150,2018-05-30
+24,Mi Gente,189,2017-06-30
+25,Classy 101,200,2023-03-31

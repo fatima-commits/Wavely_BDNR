@@ -1,15 +1,15 @@
-artist_id,artist_name
-1,Bad Bunny
-2,Karol G
-3,J Balvin
-4,Rosalía
-5,Coldplay
-6,Taylor Swift
-7,Peso Pluma
-8,Natanael Cano
-9,Junior H
-10,Feid
-11,Dua Lipa
-12,Ed Sheeran
-13,Grupo Frontera
-14,Shakira
+artist_id,artist_name,country,listeners
+1,Bad Bunny,Puerto Rico,71000000
+2,Karol G,Colombia,62000000
+3,J Balvin,Colombia,48000000
+4,Rosalía,España,39000000
+5,Coldplay,Reino Unido,80000000
+6,Taylor Swift,Estados Unidos,95000000
+7,Peso Pluma,México,45000000
+8,Natanael Cano,México,21000000
+9,Junior H,México,25000000
+10,Feid,Colombia,43000000
+11,Dua Lipa,Reino Unido,68000000
+12,Ed Sheeran,Reino Unido,82000000
+13,Grupo Frontera,Estados Unidos,30000000
+14,Shakira,Colombia,61000000
