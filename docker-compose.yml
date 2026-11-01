@@ -1,0 +1,52 @@
+version: '3.8'
+
+services:
+  Wavely-Mongo:
+    image: mongo:latest
+    container_name: Wavely-Mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+  Wavely-Cassandra:
+    image: cassandra:latest
+    container_name: Wavely-Cassandra
+    ports:
+      - "9042:9042"
+    volumes:
+      - cassandra_data:/var/lib/cassandra
+
+  zero:
+    image: dgraph/dgraph:latest
+    container_name: Wavely-Dgraph-Zero
+    ports:
+      - "5080:5080"
+      - "6080:6080"
+    command: dgraph zero --my=zero:5080
+    volumes:
+      - dgraph_zero:/dgraph
+
+  Wavely-Dgraph:
+    image: dgraph/dgraph:latest
+    container_name: Wavely-Dgraph
+    ports:
+      - "8080:8080"
+      - "9080:9080"
+    command: dgraph alpha --my=Wavely-Dgraph:7080 --zero=zero:5080 --security "whitelist=0.0.0.0/0"
+    volumes:
+      - dgraph_alpha:/dgraph
+    depends_on:
+      - zero
+
+  ratel:
+    image: dgraph/ratel:latest
+    container_name: Wavely-Ratel
+    ports:
+      - "8000:8000"
+
+volumes:
+  mongo_data:
+  cassandra_data:
+  dgraph_zero:
+  dgraph_alpha:

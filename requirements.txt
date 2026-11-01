@@ -1,0 +1,3 @@
+pymongo==4.10.1
+cassandra-driver==3.29.2
+pydgraph==21.3.2

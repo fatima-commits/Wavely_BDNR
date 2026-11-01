@@ -15,19 +15,13 @@ Wavely es una aplicación para consultar música al estilo de Spotify, que imple
 
 ### Requisitos previos
 1. Tener Docker instalado
-2. Tener un contenedor para Cassandra
-3. Tener un contenedor para MongoDB
-4. Tener un contenedor para DGraph
+2. Tener Python 3.8+ instalado.
 
-# Dgraph
-docker compose up -d zero alpha ratel
-
-# MongoDB
-docker compose up -d mongo
-
-# Cassandra
-docker compose up -d cassandra
-
+# Docker Compose
+Para levantar los contenedores de MongoDB, Cassandra y Dgraph (incluyendo Ratel) simultáneamente, ejecuta desde la raíz del proyecto:
+```bash
+docker-compose up -d
+```
 ### Setup a python virtual env with python mongodb installed
 ```
 # If pip is not present in you system
@@ -54,7 +48,7 @@ python -m uvicorn main:app --reload
 ```
 
 ### To load data
-Ensure you have a running mongodb instance
+Ensure you have a running every container instances
 i.e.:
 ```
 docker run --name mongodb -d -p 27017:27017 mongo

@@ -1,1 +1,22 @@
+# Entornos virtuales
+.venv/
+venv/
+env/
+ENV/
+
+# cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Logs
+*.log
+
+# otras cosas
+.env
+
+# otros archivos xd
+.DS_Store
+Thumbs.db
 repomix-output.xml
