@@ -111,14 +111,27 @@ def populate_cassandra():
     pass
 
 def populate_dgraph():
-    """Responsabilidad del equipo (Pendiente en clase)"""
-    # Paso 1: Leer los archivos CSV correspondientes a los nodos (User, Artist, Song, etc.)
-    # Paso 2: Estructurar las mutaciones en formato JSON
-    # Paso 3: Ejecutar las mutaciones en Dgraph usando pydgraph
-    pass
 
-if __name__ == "__main__":
-    print("Iniciando scripts de población...")
-    populate_mongodb()
-    # populate_cassandra()
-    # populate_dgraph()
+    """Responsabilidad de Nicole: carga de datos en Dgraph"""
+    # Paso 1: Conectarse a Dgraph usando get_dgraph_connection() de connect.py
+
+    # Paso 2: Borrar los datos que ya existan en Dgraph para no duplicar
+    #         información si se vuelve a correr el script
+
+    # Paso 3: Crear el schema (tipos de nodo, atributos e índices) con la
+    #         función create_dgraph_schema() de Dgraph/DgraphQueries.py
+
+    # Paso 4: Leer los CSV de la carpeta data/dgraph que tienen los nodos:
+    #         users.csv, artists.csv, songs.csv, genres.csv y playlists.csv
+    #         y convertir cada fila en un nodo con su tipo y sus atributos
+
+    # Paso 5: Leer relations.csv, donde cada fila dice qué nodo se conecta
+    #         con cuál y con qué relación (por ejemplo: user_10 follows user_1),
+    #         y agregar esas conexiones a los nodos
+
+    # Paso 6: En las colaboraciones entre artistas (collaborated_with),
+    #         guardar también cuántas canciones hicieron juntos (num_canciones)
+
+    # Paso 7: Enviar todos los nodos y relaciones a Dgraph en una sola
+    #         transacción y confirmarla para que se guarden
+    pass
