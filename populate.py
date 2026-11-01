@@ -122,7 +122,7 @@ def populate_dgraph():
     #         función create_dgraph_schema() de Dgraph/DgraphQueries.py
 
     # Paso 4: Leer los CSV de la carpeta data/dgraph que tienen los nodos:
-    #         users.csv, artists.csv, songs.csv, genres.csv y playlists.csv
+    #         users.csv, artists.csv, songs.csv, genres.csv, playlists.csv y concerts.csv
     #         y convertir cada fila en un nodo con su tipo y sus atributos
 
     # Paso 5: Leer relations.csv, donde cada fila dice qué nodo se conecta
