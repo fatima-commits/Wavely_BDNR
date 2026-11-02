@@ -35,7 +35,6 @@ def get_song_details(db, song_id_str):
         "artist.name": 1,
         "album.album_id": 1,
         "album.name": 1,
-        "album.cover_url": 1,
         "_id": 0
     }
 
@@ -105,7 +104,6 @@ def get_albums_by_artist(db, artist_id_str):
         "title": 1,
         "release_date": 1,
         "album_type": 1,
-        "cover_url": 1,
         "_id": 0
     }
 
@@ -210,7 +208,6 @@ def get_latest_releases_by_genre(db, genre):
         "title": 1,
         "artist_name": 1,
         "release_date": 1,
-        "cover_url": 1,
         "_id": 0
     }
 
