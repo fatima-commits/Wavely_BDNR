@@ -5,7 +5,7 @@ from bson.objectid import ObjectId
 from connect import get_mongo_connection
 from Mongo.MongoQueries import create_mongo_indexes
 
-def populate_mongodb():
+def populate_mongodb(): #Intento de carga de datos en MongoDB. No testeado aún. El flujo puede ser intuido.
     db = get_mongo_connection()
 
     # Limpiar colecciones previas para evitar errores
