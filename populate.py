@@ -105,9 +105,30 @@ def populate_mongodb():
     print("Datos e índices de MongoDB cargados correctamente.")
 
 def populate_cassandra():
-    """Responsabilidad del equipo"""
-    # Paso 1: Leer los archivos CSV de logs de actividad e historial de usuario
-    # Paso 2: Ejecutar inserciones batch (execute_batch) en las distintas tablas creadas por requerimiento
+    """Carga de datos en Cassandra"""
+    # Paso 1: Conectarse a Cassandra usando get_cassandra_connection() de connect.py
+
+    # Paso 2: Crear el keyspace "wavely" y las 8 tablas con la función
+    #         create_cassandra_schema() de Cassandra/CassandraQueries.py
+
+    # Paso 3: Leer los CSV de actividad de la carpeta data/ (reproducciones,
+    #         búsquedas y canciones saltadas de cada usuario)
+
+    # Paso 4: Insertar cada reproducción en las tablas que la necesitan
+    #         (songs_by_session, songs_by_user_session, users_by_song y
+    #         plays_by_user_day), porque en Cassandra se repite el dato en
+    #         cada tabla según la consulta que va a responder
+
+    # Paso 5: Por cada reproducción, aumentar en 1 el contador de
+    #         plays_by_artist_day con UPDATE ... SET play_count = play_count + 1
+
+    # Paso 6: Insertar las búsquedas en searches_by_user y las canciones
+    #         saltadas en skips_by_user_month
+
+    # Paso 7: Calcular cuántas veces escuchó cada usuario cada canción en el
+    #         mes e insertar esos totales en top_songs_by_user_month
+
+    # Paso 8: Usar inserciones por lotes (batch) para que la carga sea más rápida
     pass
 
 def populate_dgraph():
