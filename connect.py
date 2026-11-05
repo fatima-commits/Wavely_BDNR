@@ -11,7 +11,6 @@ def get_cassandra_connection():
     """Conexión a Cassandra"""
     cluster = Cluster(['localhost'], port=9042)
     session = cluster.connect()
-    # Nota: se configurará cuando el equipo defina el esquema
     return session
 
 def get_dgraph_connection():
